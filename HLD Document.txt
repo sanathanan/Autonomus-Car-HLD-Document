@@ -1,0 +1,66 @@
+Abstract: 
+	- Overview of Autonomus Car
+	- what we are going to do
+	- What we are going to achieve
+
+Problem Statement:
+	- Obstacle Detection
+	- Lane Tractory path
+	- understanding the environment
+	- understanding the location map
+
+Introduction:
+	- Explanation about Autonomus Vechile 
+		- How it operates 
+		- What are the thigs it needed
+	- Details about sensors 
+		- explanation of LiDAR 
+		https://medium.com/@edersantana/how-do-self-driving-cars-drive-part-1-lane-keeping-assist-581f6ff50349
+	- Details about Controller
+		- PID (Proportional Integral Derivative)
+	- Levels of Driving Automation   - https://en.wikipedia.org/wiki/Self-driving_car
+                                     - https://www.synopsys.com/automotive/autonomous-driving-levels.html
+									 - Level 0 (No Driving Automation)
+									 - Level 1 (Driver Assistance)
+									 - Level 2 (Partial Driving Automation)
+									 - Level 3 (Conditional Driving Automation)
+									 - Level 4 (High Driving Automation)
+									 - Level 5 (Full Driving Automation)
+
+Vehicle Communication System /Work Flow:
+	Data Collection:
+		- Controller
+		- Wheel Speed Sensor, Steering Angle, IMU
+		- LiDAR for location mapping
+		- Camera
+			- Noise Reduction
+			- Image processing using different filters
+	Lane Detection and Tracking
+		- Input from Camera
+	Motion Planning:
+		- Input from LiDAR
+		- Input from Car Current Position, Current Speed and Steering Angle
+	Data Fusion:
+		- Combining the "Data Collection", "Lane Detection and Tracking" and "Motion Planning"
+	Final Decision:
+		- Software to Hardware control (Parsing Message)
+		- Motor and Controller Input
+		- Output results in "Vehicle Tracjectory Position"	
+		
+Module Design:  
+	- Recording Data / Input Data
+	- Obstacle detection and avoiding using CNN Method
+	- Finding the location using SLAM (Simulataneously Localization and Mapping)
+	- Vehicle Trajectory Position using Computer Vision
+	- Data Fusion 
+		- Based on inputs, it going to take decision
+		- Based on Camera, Sensors, Controller, and other devices
+	https://www.mdpi.com/2218-6581/9/1/19/htm
+	https://www.researchgate.net/publication/325475976_Design_and_Development_of_Intelligent_Self-driving_Car_Using_ROS_and_Machine_Vision_Algorithm
+
+Challenges in Autonomus Car
+
+Testing
+
+
+	
